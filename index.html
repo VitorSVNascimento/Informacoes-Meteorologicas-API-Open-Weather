@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Nasc Meteorologia</title>
+    
+</head>
+<body>
+    
+    <header >
+        <nav class="nav-extended cabecalho" >
+            <div class="nav-wrapper ">
+              <h1 class="boxModel centralizar">Informações Meteorologicas </h1>
+            </div>
+            <div class="nav-content">
+              <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#test1" id="fecharHistorico">Pesquisa</a></li>
+                <li class="tab"><a href="#test2" id="botaoHistorico">Histórico</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    </header>
+
+        
+    <main id="principal">
+        <section>
+
+            <div class="pesquisa">
+               
+    
+                <div class="caixa">
+                    <span>Cidade: <input id="cidade" type="text" value="Ex: Belo Horizonte"/></span>
+                    
+                </div>
+
+                <div>
+                    <button id="pesquisar">Pesquisar</button>
+
+                    <button id="limpar">Limpar</button>
+
+                    <button id="ajuda">Ajuda</button>
+
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        <section id="nomeCidade">
+            Carandaí
+        </section>
+
+        <section >
+
+
+
+            <div id="temperatura">
+              
+               
+
+    
+                <Span class="tempAtual">15°</Span>
+                <span class="imagem"> 
+                    <img id="img" src="http://openweathermap.org/img/wn/04d@2x.png"></img>
+                   <div class="nomeClima">
+                    predominantimente nublado
+                
+                   </div>
+                </span>
+                   
+                    <div class="caixaCircularMax">
+                        <div class="circulo">
+                            <span class="numero">15°</span>
+                        </div>
+                        <div class="textoEmBaixo">maxima</div>
+                    </div>
+                    
+                    <div class="caixaCircularMin">
+                        <div class="circulo">
+                            <span class="numero">10°</span>
+                        </div>
+                        <div class="textoEmBaixo">mínimo</div>
+                    </div>
+
+                    <div class="caixaCircularUmd">
+                        <div class="circulo">
+                            <span class="numero">25%</span>
+                        </div>
+                        <div class="textoEmBaixo">Umidade</div>
+                    </div>
+
+            </div>
+
+        </section>
+
+
+        <section >
+
+            <div id="infos">
+                <div class="infosGeograficas">
+                <div id="latitude">
+                    Latitude:
+                </div>
+                <div id="longitude">
+                    Longitude:
+                </div>
+                <div id="distancia">
+                    Distancia até Brasilia:
+                </div>
+                </div>
+
+                <div class="outrasInfos">
+                    <div id="nascer">
+                        Nascer do Sol:
+                    </div>
+                    <div id="por">
+                        Por do sol:
+                    </div>
+                    <div id="vento">
+                      Velocidade do Vento:
+                    </div>
+                </div>
+               
+            </div>
+
+        </section>
+
+        <section>
+            <div id="divAjuda">
+                <div>                <button id="fechar">X</button></div>
+                <div>
+                    <p>Digite o nome de uma cidade na caixa de texto e pressione o botão (Pesquisar)<br>
+                        Caso as cidade exista o site lhe fornecerá as seguintes informações:Temperatura atual, maxima, minima e clima para o local<br>
+                        Umidade do ar e velocidade do vento<br>
+                        Horarios de nascimento e por do sol<br>
+                        Latitude Longitude e distancia até Brasilia<br>Obs: A cor de fundo do site muda de acordo com a temperatura</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="historico" >
+           
+            <br>
+            <div >
+                <h1 id="tituloTabela" class="centralizar">HISTORICO VAZIO</h1>
+                <table id="tabela" class="striped">
+
+
+                </table>
+                <br>
+                <div class="centralizar">
+                    <a id="lixeira" class="waves-effect waves-light btn"><i class="material-icons">delete</i>Limpar Histórico</a>
+                </div>
+            
+            </div>
+            
+        </section>
+    </main>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

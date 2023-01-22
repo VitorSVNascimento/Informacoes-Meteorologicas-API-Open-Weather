@@ -1,0 +1,412 @@
+/*-------------------------INICIO DAS CONFIGURAÇÕES DE CABEÇALHO-----------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+
+background-color:white;
+
+
+}
+
+
+.cabecalho{
+    background-color: rgba(107, 5, 61, 0.959);
+    width: 90vw;
+    margin: auto;
+    
+    }
+
+
+
+#cabecalho img{
+display: inline-block;
+width:  15vw;
+height: 15vh;
+}
+
+
+/*--------------------FIM DAS CONFIGURAÇÕES DE CABEÇALHO-----------------
+
+/*-----------------INICIO DAS CONFIGURAÇÃO DA PESQUISA DA CIDADE--------------*/
+
+
+#principal{
+    position: relative;
+    width: 90vw;
+    height: 68vh;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.pesquisa{
+
+    position: absolute;
+    top:0px;
+    bottom: 15%;
+    left:0px;
+    right:0px;
+    margin:auto;
+    width: 45%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgb(207, 24, 243);
+    display: block;
+}
+
+.caixa{
+    font-size: 150%;
+    position: absolute;
+    margin:auto 5%;
+    height: 20%;
+    left: 0px;
+    right: 0px;
+    bottom: 55%;
+    top: 0px;
+    display: inline-block;
+}
+
+#divAjuda{
+    position: absolute;
+    top:0px;
+    bottom: 15%;
+    right: 2%;
+    margin:auto;
+    width: 45%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(207, 24, 243);
+    display: none;
+    z-index: 2;
+}
+
+#fechar{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 10%;
+    height: 8%;
+    margin: auto;
+    border-radius: 5px ;
+    background-color: blueviolet;
+    font-size: 110%;
+}
+
+#cidade{
+    height: 50%;
+    width: 66%;
+    border-radius: 5px ;
+    background-color:blueviolet;
+    font-size: 80%;
+    
+    }
+
+.pesquisa button{
+    position: absolute;
+    bottom: 10%;
+    top: 0px;
+    width: 40%;
+    height: 15%;
+    margin: auto;
+    border-radius: 5px ;
+    background-color: blueviolet;
+    
+    font-size: 110%;
+}
+
+#pesquisar{
+    left: 5%;
+}
+
+#limpar{
+    right: 5%;
+}
+
+#ajuda{
+    left:0px;
+    right: 0px;
+    top: 50%;
+}
+
+
+
+/*----------------------FIM DAS CONFIGURAÇÕES DA PESQUISA-----------------*/
+
+/*---------------INICIO DAS CONFIG DE TEMPERATURA -------------------------*/
+
+
+#nomeCidade{
+
+    background-color: rgb(207, 24, 243);
+    display: none;
+    height: 10%;
+    font-size: 200%;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    width: 96%;
+    margin: auto;
+    
+}
+
+#temperatura{
+    position: absolute;
+    top:0px;
+    bottom: 15%;
+    right: 2%;
+    margin:auto;
+    width: 45%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgb(207, 24, 243);
+    display: none;
+    z-index: 1;
+}
+
+.imagem{
+    position: absolute;
+    margin:auto;
+    height: 35%;
+    bottom: 65%;
+    top: 0px;
+    width: 20%;
+    right: 30%;
+    text-align: center;
+  
+}
+
+.imagem img{
+    position: absolute;
+    bottom: 15%;
+
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.tempAtual{
+    font-size: 500%;
+    position: absolute;
+    height: 35%;
+    bottom: 80%;
+    top: 0px;
+    margin: auto;
+    
+}
+
+.nomeClima{
+    position: absolute;
+    bottom: 30%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 15%;
+    width: fit-content;
+    text-align: center;
+}
+
+
+.caixaCircularMax{
+
+    position: absolute;
+    height: 50%;
+    width: 32%;
+    bottom: 1%;
+
+}
+
+.caixaCircularMin{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 1%;
+    height: 50%;
+    width: 32%;
+    margin: auto;
+
+}
+
+.caixaCircularUmd{
+    position: absolute;
+    right: 0px;
+    height: 50%;
+    bottom: 1%;
+    width: 32%;
+    margin: auto;
+   
+}
+
+.circulo{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 8%;
+    border: 10px solid red;
+    font-size: 150%;
+   height: 70px;
+   border-radius: 50% ;
+   width: 70px;
+   display: inline-block;
+   margin: auto;
+}
+
+.numero{
+    position: absolute;
+    margin: auto;
+    height: 50%;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+   
+}
+
+.textoEmBaixo{
+    position: absolute;
+    bottom: 2%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    height: 15%;
+    width: fit-content;
+    text-align: center;
+}
+/*---------------FIM DAS CONFIG DE TEMPERATURA -------------------------*/
+
+/*---------------INICIO DAS CONFIG DE INFORMAÇÕES -------------------------*/
+#infos{
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 0px;
+    left: 0px;
+    margin:auto;
+    width: 96%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: rgb(207, 24, 243);
+    font-size: 125%;
+}
+
+
+
+.infosGeograficas{
+    width: 49%;
+    display: inline-block;
+    height: 90%;    
+    
+}
+.outrasInfos{
+    width: 50%;
+    display: inline-block;
+    height: 90%;
+    text-align: right;
+}
+/*-----------------CONFIGURAÇÕES DO HISTÓRICO-----------------------------*/
+#historico{
+    width:100% ;
+    height: fit-content;
+    background-color: rgb(207, 24, 243);
+    border-radius: 10px;
+    display: none;
+
+}
+
+#lixeira{
+    background-color: blueviolet;
+}
+
+.boxModel{
+    font-size: 2.5rem;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.centralizar{
+    text-align: center;
+}
+#tituloTabela{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/*-----------------DISPLAY EM TELA GRANDE-----------------------------*/
+@media (min-width:951px){
+
+
+
+#principal{
+    width: 855.9px;
+}
+
+#cabecalho{
+    width: 855.9px;
+}
+}
+
+/*-----------------DISPLAY EM TELA PEQUENA-----------------------------*/
+
+@media (max-width:595px){
+
+    #principal{
+        width: auto;
+       
+
+    }
+    #cabecalho{
+        width: auto;
+    }
+
+    .nome{
+        font-size: 200%;
+    }
+
+    .pesquisa{
+        width: auto;
+        
+    }
+
+    #nomeCidade{
+        width: 96%;
+        font-size: 1.5em;
+     
+    }
+
+    #temperatura{
+       
+        width: 96%;
+        top: auto;
+        bottom: -100px;
+    }
+
+    #divAjuda{
+        
+        width: 96%;
+        top: auto;
+        bottom: -130px;
+    }
+
+    #infos{
+        
+        width: 96%;
+        top: auto;
+        bottom: -330px;
+
+
+    }
+
+    .outrasInfos{
+        text-align: left;
+    }
+
+}
