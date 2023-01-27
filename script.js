@@ -147,7 +147,7 @@ function limpa(){
     document.querySelector('#temperatura').style.display='none';
     document.querySelector('#nomeCidade').style.display='none';
     document.body.style.backgroundColor='white';
-    document.querySelector('#cidade').value='Ex: Belo Horizonte';
+    document.querySelector('#cidade').value = '';
     document.querySelectorAll('.pesquisa')[0].style.left ='0px';
     document.querySelectorAll('.pesquisa')[0].style.right='0px';
     document.querySelector('#divAjuda').style.display='none';

@@ -53,7 +53,8 @@ height: 15vh;
     width: 45%;
     height: 50%;
     border-radius: 10px;
-    background-color: rgb(207, 24, 243);
+    box-shadow: -5px 0px 10px black;
+    background-color:  rgb(207, 24, 243);
     display: block;
 }
 
@@ -78,6 +79,7 @@ height: 15vh;
     width: 45%;
     height: fit-content;
     border-radius: 10px;
+    box-shadow: -5px 0px 10px black;
     background-color: rgb(207, 24, 243);
     display: none;
     z-index: 2;
@@ -139,7 +141,7 @@ height: 15vh;
 
 
 #nomeCidade{
-
+    box-shadow: -5px 0px 10px black;
     background-color: rgb(207, 24, 243);
     display: none;
     height: 10%;
@@ -161,6 +163,7 @@ height: 15vh;
     width: 45%;
     height: 50%;
     border-radius: 10px;
+    box-shadow: 5px 0px 10px black;
     background-color: rgb(207, 24, 243);
     display: none;
     z-index: 1;
@@ -293,6 +296,7 @@ height: 15vh;
     width: 96%;
     height: fit-content;
     border-radius: 10px;
+    box-shadow: -5px 0px 10px black;
     background-color: rgb(207, 24, 243);
     font-size: 125%;
 }
